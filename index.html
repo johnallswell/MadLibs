@@ -8,9 +8,11 @@
     <!-- Bootstrap Components -->
     <link href="css/bootstrap.GridTypographyFormsButtons.min.css" rel="stylesheet">
 
+     <link href="css/style.css" rel="stylesheet">
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
- 
+ 	<script type="text/javascript" src="js/script.js"></script>
   </head>
 
   <body>
@@ -20,10 +22,62 @@
         <div class="row">
       
           <div class="col-xs-12">
-            <p id="mad_lib" class="lead">Create your Mad Lib!</p>
+            <p id="mad_lib" class="lead top-margin centered">Create your Mad Lib!</p>
           </div>
       
         </div>
+
+      <!-- Form -->
+        <div class="row">
+
+          <div class="col-xs-12">
+              <div id="mad_lib_form" class="form-horizontal top-margin">
+
+                <!-- Exclamation -->
+                  <div class="form-group">
+                    <label for="exclamation" class="col-sm-4 control-label">Exclamation: </label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="exclamation" placeholder="Huzzah, Egads, Shazbot ...">
+                    </div>
+                  </div>
+
+                <!-- Adverb -->
+                  <div class="form-group">
+                    <label for="adverb" class="col-sm-4 control-label">Adverb: </label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="adverb" placeholder="lazily, sloppily, quickly ...">
+                    </div>
+                  </div>
+
+                <!-- Noun -->
+                  <div class="form-group">
+                    <label for="noun" class="col-sm-4 control-label">Noun: </label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="noun" placeholder="dog, horse, meerkat ...">
+                    </div>
+                  </div>
+
+                <!-- Verb -->
+                  <div class="form-group">
+                    <label for="verb" class="col-sm-4 control-label">Verb: </label>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="verb" placeholder="ran, danced, twerked ...">
+                    </div>
+                  </div>
+
+                <!-- Submit -->
+                  <div class="form-group">
+                    <div class="col-sm-offset-4 col-sm-4">
+                      <!--Debug type="submit" -->
+                      <button id="submit-btn" class="btn btn-default">Generate</button>
+                    </div>
+                  </div>
+
+              </div>
+          </div>
+        
+        </div>
+      <!-- End Form -->
     
     </div>
   </body>
